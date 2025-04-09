@@ -16,10 +16,14 @@ npm run dev
 
 ### Criando o Arquivo de Teste
 
-O arquivo de teste deve ser criado e colocado na pasta `public`. Para um teste local mais preciso, recomenda-se definir o `count` como 2000.
+O arquivo de teste deve ser criado e colocado na pasta `public`. 
+Para um teste local mais preciso, recomenda-se definir o `count` como 2000.
 
 Exemplo de comando para criar um arquivo de 100 MB:
 
 ```bash
 dd if=/dev/zero of=public/arquivo-teste.bin bs=1M count=100
 ```
+
+Para usuarios do windows o dd.exe está localizado no `src/auxiliares`.
+Demais plataformas é nativo do sistema
